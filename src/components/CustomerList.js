@@ -4,25 +4,26 @@ import { connect } from 'react-redux'
 
 
 
-
-
-export default class CustomerList extends React.Component{
-
-
+class CustomerList extends React.Component{
 
 
 
 
 
     render(){
-
+        console.log(this.props)
         return(
             <div>Hello</div>
         )
     }
 }
 
-connect(null, null)(CustomerList)
+const reduxState = state => {
+    return {
+        
+    }
+}
+export default connect(reduxState, null)(CustomerList)
 //Connect is a high order function
 //A High order function is a function that returns a function
 

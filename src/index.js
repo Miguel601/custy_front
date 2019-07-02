@@ -4,8 +4,11 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import { createStore } from 'redux'
+
+import { createStore, applyMiddleware, combineReducers, compose } from 'redux'
+import thunk from 'redux-thunk'
 import { Provider } from 'react-redux'
+
 
 //Redux uses a Pub/sub pattern. Component can subscribe to get state updates from the store
 
